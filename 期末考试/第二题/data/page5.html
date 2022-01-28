@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>历史成交明细</title>
+<meta name="keywords" content="成交明细,逐笔交易,财经,股票,历史成交明细">
+<meta name="description" content="股票历史成交明细">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" href="http://www.sinaimg.cn/cj/transactions/css/style_history.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://www.sinaimg.cn/cj/transactions/css/style.css" type="text/css" media="all" />
+<script language="javascript" type="text/javascript">
+if( typeof $ == 'undefined' )$ = function(t){return document.getElementById(t)};
+var delistQuarter = 0;
+var currentPage = 6;
+var timestart = "14:41:12";
+var timeend = "14:44:18";
+var detailPages=[[1,'14:56:54','15:00:03'],[2,'14:53:46','14:56:54'],[3,'14:50:37','14:53:46'],[4,'14:47:29','14:50:37'],[5,'14:44:20','14:47:29'],[6,'14:41:12','14:44:20'],[7,'14:38:03','14:41:12'],[8,'14:34:55','14:38:03'],[9,'14:31:46','14:34:55'],[10,'14:28:38','14:31:46'],[11,'14:25:29','14:28:38'],[12,'14:22:21','14:25:29'],[13,'14:19:12','14:22:21'],[14,'14:16:04','14:19:12'],[15,'14:12:55','14:16:04'],[16,'14:09:47','14:12:55'],[17,'14:06:38','14:09:47'],[18,'14:03:30','14:06:38'],[19,'14:00:21','14:03:30'],[20,'13:57:13','14:00:21'],[21,'13:54:04','13:57:13'],[22,'13:50:56','13:54:04'],[23,'13:47:47','13:50:56'],[24,'13:44:39','13:47:47'],[25,'13:41:30','13:44:39'],[26,'13:38:22','13:41:30'],[27,'13:35:13','13:38:22'],[28,'13:32:05','13:35:13'],[29,'13:28:56','13:32:05'],[30,'13:25:48','13:28:56'],[31,'13:22:39','13:25:48'],[32,'13:19:31','13:22:39'],[33,'13:16:22','13:19:31'],[34,'13:13:14','13:16:22'],[35,'13:10:05','13:13:14'],[36,'13:06:57','13:10:05'],[37,'13:03:48','13:06:57'],[38,'13:00:40','13:03:48'],[39,'11:27:31','13:00:40'],[40,'11:24:23','11:27:31'],[41,'11:21:14','11:24:23'],[42,'11:18:06','11:21:14'],[43,'11:14:57','11:18:06'],[44,'11:11:49','11:14:57'],[45,'11:08:40','11:11:49'],[46,'11:05:32','11:08:40'],[47,'11:02:23','11:05:32'],[48,'10:59:15','11:02:23'],[49,'10:56:06','10:59:15'],[50,'10:52:58','10:56:06'],[51,'10:49:49','10:52:58'],[52,'10:46:41','10:49:49'],[53,'10:43:32','10:46:41'],[54,'10:40:24','10:43:32'],[55,'10:37:15','10:40:24'],[56,'10:34:07','10:37:15'],[57,'10:30:58','10:34:07'],[58,'10:27:50','10:30:58'],[59,'10:24:41','10:27:50'],[60,'10:21:33','10:24:41'],[61,'10:18:24','10:21:33'],[62,'10:15:16','10:18:24'],[63,'10:12:07','10:15:16'],[64,'10:08:59','10:12:07'],[65,'10:05:50','10:08:59'],[66,'10:02:42','10:05:50'],[67,'09:59:33','10:02:42'],[68,'09:56:25','09:59:33'],[69,'09:53:16','09:56:25'],[70,'09:50:08','09:53:16'],[71,'09:46:59','09:50:08'],[72,'09:43:51','09:46:59'],[73,'09:40:42','09:43:51'],[74,'09:37:34','09:40:42'],[75,'09:34:25','09:37:34'],[76,'09:31:17','09:34:25'],[77,'09:28:08','09:31:17'],[78,'09:25:00','09:28:08']];;
+var detailDate = "2021-12-27";
+var pageDate = "2021-12-27";
+//调整父级frame高度
+document.domain = "finance.sina.com.cn";
+var SetHeightTimeObj = setInterval("window.frameElement.height = document.body.scrollHeight",50);
+window.onload = function(){clearInterval(SetHeightTimeObj);window.frameElement.height = document.body.scrollHeight;}
+</script> 
+<style type="text/css">
+body{margin:0px;padding:0px;}
+.wrap{margin:0 auto;padding:0px;width:928px;}
+.dataOuter{border:none;padding:0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="dataOuter">
+
+<div class="main">
+<div style="display: none;" id="ScriptLoader"></div>
+<div class="timeline" id="ruler"></div>
+</div>
+
+<table class="datatbl" id="datatbl">
+	<thead>
+		<tr>
+			<th style="width: 16%;">成交时间</th>
+			<td style="width: 17%;">成交价</td>
+			<td style="width: 17%;">价格变动</td>
+			<td style="width: 17%;">成交量(手)</td>
+			<td style="width: 17%;">成交额(元)</td>
+			<th style="width: 16%;">性质</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ><th>14:44:18</th><td>17.20</td><td>0.01</td><td>82</td><td>141,040</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:44:15</th><td>17.19</td><td>--</td><td>23</td><td>39,537</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:44:12</th><td>17.19</td><td>-0.01</td><td>24</td><td>41,256</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:44:09</th><td>17.20</td><td>0.01</td><td>66</td><td>113,864</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:44:06</th><td>17.19</td><td>0.01</td><td>130</td><td>223,470</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:44:03</th><td>17.18</td><td>--</td><td>380</td><td>652,840</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:44:00</th><td>17.18</td><td>-0.01</td><td>206</td><td>353,908</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:43:57</th><td>17.19</td><td>--</td><td>5673</td><td>9,753,262</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:43:54</th><td>17.19</td><td>-0.01</td><td>91</td><td>156,429</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:43:51</th><td>17.20</td><td>0.01</td><td>95</td><td>163,400</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:48</th><td>17.19</td><td>-0.01</td><td>34</td><td>58,446</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:43:45</th><td>17.20</td><td>--</td><td>31</td><td>53,320</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:42</th><td>17.20</td><td>--</td><td>37</td><td>63,640</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:39</th><td>17.20</td><td>--</td><td>11</td><td>18,920</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:36</th><td>17.20</td><td>--</td><td>21</td><td>36,120</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:33</th><td>17.20</td><td>--</td><td>77</td><td>132,440</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:30</th><td>17.20</td><td>--</td><td>15</td><td>25,800</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:27</th><td>17.20</td><td>--</td><td>39</td><td>67,080</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:24</th><td>17.20</td><td>--</td><td>32</td><td>55,040</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:21</th><td>17.20</td><td>--</td><td>699</td><td>1,202,280</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:18</th><td>17.20</td><td>--</td><td>23</td><td>39,560</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:15</th><td>17.20</td><td>0.01</td><td>64</td><td>110,080</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:12</th><td>17.19</td><td>-0.01</td><td>32</td><td>55,008</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:43:09</th><td>17.20</td><td>--</td><td>15</td><td>25,800</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:06</th><td>17.20</td><td>0.01</td><td>20</td><td>34,400</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:43:03</th><td>17.19</td><td>-0.01</td><td>89</td><td>152,991</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:43:00</th><td>17.20</td><td>--</td><td>5</td><td>8,600</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:42:57</th><td>17.20</td><td>0.01</td><td>25</td><td>43,000</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:42:54</th><td>17.19</td><td>--</td><td>71</td><td>122,049</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:42:51</th><td>17.19</td><td>--</td><td>134</td><td>230,346</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:42:48</th><td>17.19</td><td>-0.01</td><td>405</td><td>696,195</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:42:45</th><td>17.20</td><td>--</td><td>44</td><td>75,680</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:42:42</th><td>17.20</td><td>--</td><td>39</td><td>67,080</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:42:39</th><td>17.20</td><td>--</td><td>52</td><td>89,440</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:42:36</th><td>17.20</td><td>-0.01</td><td>4</td><td>6,880</td><th><h1>中性盘</h1></th></tr>
+<tr ><th>14:42:33</th><td>17.21</td><td>0.02</td><td>30</td><td>51,630</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:42:30</th><td>17.19</td><td>-0.01</td><td>64</td><td>110,360</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:42:27</th><td>17.20</td><td>--</td><td>550</td><td>947,376</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:42:24</th><td>17.20</td><td>--</td><td>114</td><td>196,080</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:42:21</th><td>17.20</td><td>--</td><td>520</td><td>894,400</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:42:18</th><td>17.20</td><td>--</td><td>206</td><td>354,320</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:42:15</th><td>17.20</td><td>-0.01</td><td>29</td><td>50,224</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:42:12</th><td>17.21</td><td>0.01</td><td>53</td><td>91,213</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:42:09</th><td>17.20</td><td>--</td><td>129</td><td>221,880</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:42:06</th><td>17.20</td><td>--</td><td>284</td><td>488,480</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:42:03</th><td>17.20</td><td>--</td><td>489</td><td>841,080</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:42:00</th><td>17.20</td><td>-0.01</td><td>2476</td><td>4,258,720</td><th><h6>卖盘</h6></th></tr>
+<tr ><th>14:41:57</th><td>17.21</td><td>--</td><td>9</td><td>15,489</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:54</th><td>17.21</td><td>--</td><td>24</td><td>41,304</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:48</th><td>17.21</td><td>--</td><td>105</td><td>180,705</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:45</th><td>17.21</td><td>--</td><td>214</td><td>368,294</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:42</th><td>17.21</td><td>--</td><td>108</td><td>185,868</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:39</th><td>17.21</td><td>--</td><td>125</td><td>215,125</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:36</th><td>17.21</td><td>--</td><td>66</td><td>113,586</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:33</th><td>17.21</td><td>--</td><td>23</td><td>39,583</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:30</th><td>17.21</td><td>--</td><td>185</td><td>318,385</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:27</th><td>17.21</td><td>--</td><td>8</td><td>13,768</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:24</th><td>17.21</td><td>--</td><td>41</td><td>70,561</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:21</th><td>17.21</td><td>--</td><td>4</td><td>6,884</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:18</th><td>17.21</td><td>--</td><td>29</td><td>49,909</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:15</th><td>17.21</td><td>--</td><td>95</td><td>163,495</td><th><h5>买盘</h5></th></tr>
+<tr ><th>14:41:12</th><td>17.21</td><td>17.21</td><td>8</td><td>13,768</td><th><h5>买盘</h5></th></tr>
+	</tbody>
+</table>
+<div style="height:40px;line-height:40px;text-align:right;padding-right:10px;"><a href="downxls.php?date=2021-12-27&symbol=sz000001" target="_blank">明细下载</a></div>
+
+</div>
+</div>
+
+
+</body>
+<script type="text/javascript">
+//<![CDATA[
+window.parent.main();
+//]]>
+</script>
+</html>
